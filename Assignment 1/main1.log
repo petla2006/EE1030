@@ -1,8 +1,8 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Debian) (preloaded format=pdflatex 2024.8.3)  11 AUG 2024 10:01
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Debian) (preloaded format=pdflatex 2024.8.3)  11 AUG 2024 11:48
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**jeeprblm.tex
+**main1.tex
 (./main1.tex
 LaTeX2e <2022-11-01> patch level 1
 L3 programming layer <2023-01-16>
@@ -1284,12 +1284,6 @@ Underfull \hbox (badness 10000) in paragraph at lines 54--56
  []
 
 
-Underfull \hbox (badness 3601) in paragraph at lines 61--72
-\OT1/txr/m/n/12 5. Sup-pose $\OML/txmi/m/it/12 Z[]; Z[]; Z[]$ \OT1/txr/m/n/12 a
-re the ver-tices of an
- []
-
-
 Underfull \hbox (badness 10000) in paragraph at lines 61--72
 
  []
@@ -1322,20 +1316,20 @@ Package rerunfilecheck Info: File `main1.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 30388 strings out of 476091
- 598095 string characters out of 5794082
- 1882330 words of memory out of 5000000
+ 30387 strings out of 476091
+ 598087 string characters out of 5794082
+ 1880330 words of memory out of 5000000
  50091 multiletter control sequences out of 15000+600000
  580634 words of font info for 178 fonts, out of 8000000 for 9000
  1144 hyphenation exceptions out of 8191
- 101i,6n,96p,1176b,436s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 101i,6n,96p,1173b,436s stack positions out of 10000i,1000n,20000p,200000b,200000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texliv
 e/texmf-dist/fonts/type1/public/txfonts/rtxmi.pfb></usr/share/texlive/texmf-dis
 t/fonts/type1/public/txfonts/rtxr.pfb></usr/share/texlive/texmf-dist/fonts/type
 1/public/txfonts/txex.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/txf
 onts/txsy.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb><
 /usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on main1.pdf (1 page, 42613 bytes).
+Output written on main1.pdf (1 page, 41408 bytes).
 PDF statistics:
  77 PDF objects out of 1000 (max. 8388607)
  61 compressed objects within 1 object stream
