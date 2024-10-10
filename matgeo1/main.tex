@@ -1,0 +1,109 @@
+\let\negmedspace\undefined
+\let\negthickspace\undefined
+\documentclass[journal]{IEEEtran}
+\usepackage[a5paper, margin=10mm, onecolumn]{geometry}
+%\usepackage{lmodern} % Ensure lmodern is loaded for pdflatex
+\usepackage{tfrupee} % Include tfrupee package
+
+\setlength{\headheight}{1cm} % Set the height of the header box
+\setlength{\headsep}{0mm}     % Set the distance between the header box and the top of the text
+
+\usepackage{gvv-book}
+\usepackage{gvv}
+\usepackage{cite}
+\usepackage{amsmath,amssymb,amsfonts,amsthm}
+\usepackage{algorithmic}
+\usepackage{graphicx}
+\usepackage{textcomp}
+\usepackage{xcolor}
+\usepackage{txfonts}
+\usepackage{listings}
+\usepackage{enumitem}
+\usepackage{mathtools}
+\usepackage{gensymb}
+\usepackage{comment}
+\usepackage[breaklinks=true]{hyperref}
+\usepackage{tkz-euclide} 
+\usepackage{listings}
+\usepackage{gvv}                                        
+\def\inputGnumericTable{}                                 
+\usepackage[latin1]{inputenc}                                
+\usepackage{color}                                            
+\usepackage{array}                                            
+\usepackage{longtable}                                       
+\usepackage{calc}                                             
+\usepackage{multirow}                                         
+\usepackage{hhline}                                           
+\usepackage{ifthen}                                           
+\usepackage{lscape}
+\begin{document}
+
+\bibliographystyle{IEEEtran}
+\vspace{3cm}
+
+\title{1.10.28}
+\author{AI24BTECH11034-Tanush Sri Sai Petla}
+% \bigskip
+{\let\newpage\relax\maketitle}
+
+\renewcommand{\thefigure}{\theenumi}
+\renewcommand{\thetable}{\theenumi}
+\setlength{\intextsep}{10pt} % Space between text and floats
+
+
+\numberwithin{equation}{enumi}
+\numberwithin{figure}{enumi}
+\renewcommand{\thetable}{\theenumi}
+
+
+\textbf{Question:}\\
+Write down a unit vector in XY-plane, making an angle of $30\degree$ with the positive direction of X-axis.
+\\
+\textbf{Solution: }\\
+\begin{table}[h!]
+    \renewcommand{\thetable}{1}
+    \centering
+    \input{tables/table.tex}
+    \caption{Terms used}
+    \label{TABLE 1:}
+\end{table}\\
+In the 2D space, the unit direction vector is defined as\\
+\begin{equation}
+    m=\begin{pmatrix}
+        \cos\alpha\\
+        \cos\beta\\
+    \end{pmatrix}
+\end{equation}
+Where $\alpha.\beta$ are the angles made by the vectors with the axes.
+
+Angle made by the unit vector in question with the positive X-axis and positive Y-axis $\colon$\\
+\begin{equation}
+    \alpha=30\degree
+\end{equation}
+\begin{equation}
+    \beta=60\degree
+\end{equation}\\
+From equation 0.1, the required unit vector is$\colon$
+\begin{equation*}
+    \begin{pmatrix}
+        \frac{\sqrt{3}}{2}\\
+        \frac{1}{2}
+    \end{pmatrix}
+\end{equation*}
+
+
+
+
+
+
+
+
+
+
+  \begin{figure}[h!]
+    \centering
+    \includegraphics[width=0.7\linewidth]{figs/figure1.png}
+    \caption{Plot showing the line $AB$}
+    \label{stemplot}
+ \end{figure}
+\end{document}
