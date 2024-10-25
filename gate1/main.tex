@@ -66,28 +66,30 @@
 \begin{figure}[!ht]
 \centering
 \resizebox{0.5\textwidth}{!}{%
-\begin{circuitikz}{scale=0.2}
+\begin{circuitikz}
 \tikzstyle{every node}=[font=\normalsize]
-\draw (3,8.25) to[short] (3,5.75);
-\draw (3,8.25) to[R] (5.25,8.25);
-\draw (3,5.75) to[R] (5.75,5.75);
-\draw (5.75,5.75) to[R] (9,5.75);
-\draw (9,5.75) to[short] (9,8.25);
-\draw (6.5,8.25) to[R] (9,8.25);
-\draw (5.25,8.25) to[short] (5.25,7.75);
-\draw (6.5,8.25) to[short] (6.5,7.75);
-\draw (5,7.75) to[short] (6.75,7.75);
-\draw [->, >=Stealth] (6,5.75) -- (6,7.75);
-\draw  (6,7.5) ellipse (1cm and 1cm);
-\draw (9,5.75) to (9,5.25) node[ground]{};
-\draw (3,8.25) to[short, -o] (3,9) ;
-\node [font=\normalsize] at (4,7.75) {2 k$\Omega$};
-\draw (5,8.25) to[short, -o] (5,9) ;
-\node [font=\normalsize] at (7.75,7.75) {4 k$\Omega$};
-\node [font=\normalsize] at (7.25,5.25) {42 k$\Omega$};
-\node [font=\normalsize] at (2.75,9.25) {$V_{DD}$ = 16 V};
-\node [font=\normalsize] at (5.25,9) {P};
-\node [font=\normalsize] at (4.25,5.25) {R};
+\draw (10.25,13.25) to[R] (13.25,13.25);
+\draw (9.75,11) to[R] (13.25,11);
+\draw (13.25,11) to[short] (13.25,13.25);
+\draw (8.75,13.25) to[short] (9.75,13.25);
+\draw (9.75,13.25) to[short] (9.75,12.75);
+\draw (10.25,13.25) to[short] (10.25,12.75);
+\draw (9.5,12.75) to[short] (10.25,12.75);
+\draw [->, >=Stealth] (10,11) -- (10,12.75);
+\draw (8.75,13.25) to[R] (7,13.25);
+\draw (9.75,11) to[R] (7,11);
+\draw (7,13.25) to[short] (7,11);
+\draw (9.5,12.75) to[short] (10.5,12.75);
+\draw (7,13.25) to[short, -o] (7,14.25) ;
+\draw (8.75,13.25) to[short, -o] (8.75,14.25) ;
+\draw  (10,13) ellipse (0.5cm and 0.75cm);
+\draw (13.25,11) to (13.25,10.75) node[ground]{};
+\node [font=\normalsize] at (9.5,14.5) {P};
+\node [font=\normalsize] at (7.75,12.75) {2 k$\Omega$};
+\node [font=\normalsize] at (8.5,10.5) {R};
+\node [font=\normalsize] at (11.75,13.75) {4 k$\Omega$};
+\node [font=\normalsize] at (11.75,10.5) {42 k$\Omega$};
+\node [font=\normalsize] at (6.25,14.5) {$V_{DD}$=16V};
 \end{circuitikz}
 }%
 \label{fig:my_label}
@@ -423,6 +425,7 @@ A 16 $\mu A$ beam of alpha particles, having cross-sectional area $10^{-4}m^{2}$
 \item 0.8
 \end{enumerate}
 \end{multicols}
+
 
 
 
