@@ -1,0 +1,430 @@
+\let\negmedspace\undefined
+\let\negthickspace\undefined
+\documentclass[journal]{IEEEtran}
+\usepackage[a5paper, margin=10mm, onecolumn]{geometry}
+%\usepackage{lmodern} % Ensure lmodern is loaded for pdflatex
+\usepackage{tfrupee} % Include tfrupee package
+
+\setlength{\headheight}{1cm} % Set the height of the header box
+\setlength{\headsep}{0mm}     % Set the distance between the header box and the top of the text
+
+\usepackage{gvv-book}
+\usepackage{gvv}
+\usepackage{cite}
+\usepackage{amsmath,amssymb,amsfonts,amsthm}
+\usepackage{algorithmic}
+\usepackage{graphicx}
+\usepackage{textcomp}
+\usepackage{xcolor}
+\usepackage{txfonts}
+\usepackage{listings}
+\usepackage{enumitem}
+\usepackage{mathtools}
+\usepackage{gensymb}
+\usepackage{comment}
+\usepackage[breaklinks=true]{hyperref}
+\usepackage{tkz-euclide} 
+\usepackage{listings}
+
+% \usepackage{gvv}                                        
+\def\inputGnumericTable{}                                 
+\usepackage[latin1]{inputenc}                                
+\usepackage{color}                                            
+\usepackage{array}                                            
+\usepackage{longtable}                                       
+\usepackage{calc}  
+\usepackage{circuitikz}
+\usepackage{multirow}                                         
+\usepackage{hhline}                                           
+\usepackage{ifthen}                                           
+\usepackage{lscape}
+\usepackage{tikz}
+\begin{document}
+
+\bibliographystyle{IEEEtran}
+\vspace{3cm}
+
+
+\renewcommand{\thefigure}{\theenumi}
+\renewcommand{\thetable}{\theenumi}
+\setlength{\intextsep}{10pt} % Space between text and floats
+
+
+\numberwithin{equation}{enumi}
+\numberwithin{figure}{enumi}
+\renewcommand{\thetable}{\theenumi}
+
+\title{Gate PH-2007}
+\author{AI24BTECH11034 Tanush Sri Sai Petla
+}
+\maketitle
+\renewcommand{\thefigure}{\theenumi}
+\renewcommand{\thetable}{\theenumi}
+\begin{enumerate}[start=69]
+    \item In the circuit shown, the voltage at test point P is 12 V and the voltage between gate and source is -2 V. The value of $R$ (in k$\Omega$) is
+
+\begin{figure}[!ht]
+\centering
+\resizebox{0.5\textwidth}{!}{%
+\begin{circuitikz}{scale=0.2}
+\tikzstyle{every node}=[font=\normalsize]
+\draw (3,8.25) to[short] (3,5.75);
+\draw (3,8.25) to[R] (5.25,8.25);
+\draw (3,5.75) to[R] (5.75,5.75);
+\draw (5.75,5.75) to[R] (9,5.75);
+\draw (9,5.75) to[short] (9,8.25);
+\draw (6.5,8.25) to[R] (9,8.25);
+\draw (5.25,8.25) to[short] (5.25,7.75);
+\draw (6.5,8.25) to[short] (6.5,7.75);
+\draw (5,7.75) to[short] (6.75,7.75);
+\draw [->, >=Stealth] (6,5.75) -- (6,7.75);
+\draw  (6,7.5) ellipse (1cm and 1cm);
+\draw (9,5.75) to (9,5.25) node[ground]{};
+\draw (3,8.25) to[short, -o] (3,9) ;
+\node [font=\normalsize] at (4,7.75) {2 k$\Omega$};
+\draw (5,8.25) to[short, -o] (5,9) ;
+\node [font=\normalsize] at (7.75,7.75) {4 k$\Omega$};
+\node [font=\normalsize] at (7.25,5.25) {42 k$\Omega$};
+\node [font=\normalsize] at (2.75,9.25) {$V_{DD}$ = 16 V};
+\node [font=\normalsize] at (5.25,9) {P};
+\node [font=\normalsize] at (4.25,5.25) {R};
+\end{circuitikz}
+}%
+\label{fig:my_label}
+\end{figure}
+
+    \begin{multicols}{4}
+        \begin{enumerate}
+            \item 42
+            \item 48
+            \item 56
+            \item 70
+        \end{enumerate}
+    \end{multicols}
+
+    \item When an input voltage $V_i$, of the form shown, is applied to the circuit given below, the output voltage $V_o$ is of the form:
+
+\begin{figure}[h]
+\centering
+\resizebox{0.5\textwidth}{!}{%   % Adjusted width here
+\begin{circuitikz}
+\tikzstyle{every node}=[font=\normalsize]
+\draw (1.75,9.25) to[R] (4.5,9.25);
+\draw (4.5,9.25) to[short] (6.25,9.25);
+\draw (1.75,7.5) to[short] (6.5,7.5);
+\draw (5.5,8) to[battery1] (5.5,7.5);
+\draw (5.5,9.25) to[D] (5.5,8);
+\draw [<->, >=Stealth, dashed] (6.5,9.25) -- (6.5,7.5);
+\draw [<->, >=Stealth, dashed] (1.75,9.25) -- (1.75,7.5);
+\node [font=\normalsize] at (6.75,8.5) {$V_0$};
+\node [font=\normalsize] at (2,8.5) {$V_1$};
+\node [font=\normalsize] at (3.25,8.75) {R};
+\node [font=\normalsize] at (4.75,8) {3V};
+\end{circuitikz}
+}%
+\label{fig:my_label}
+\end{figure}
+\begin{figure}[!ht]
+\centering
+\resizebox{0.5\textwidth}{!}{%
+\begin{circuitikz}
+\tikzstyle{every node}=[font=\large]
+\draw [->, >=Stealth] (4.5,11.75) -- (14,11.75);
+\draw (5,11.75) to[short] (6.75,13.5);
+\draw (6.75,13.5) to[short] (10.25,10);
+\draw (10.25,10) to[short] (12,11.75);
+\node [font=\large] at (3.5,11.75) {0V};
+\draw [dashed] (6.75,13.5) -- (5,13.5);
+\draw [dashed] (10.25,10) -- (5.5,10);
+\node [font=\large] at (3.25,13.5) {12V};
+\node [font=\large] at (3.25,10) {-12V};
+\end{circuitikz}
+}%
+\label{fig:my_label}
+\end{figure}
+
+    \begin{enumerate}
+        \item \begin{figure}[!ht]
+\resizebox{0.3\textwidth}{!}{%
+\begin{circuitikz}
+\tikzstyle{every node}=[font=\normalsize]
+\foreach \x in {0,...,0}{
+  \draw  (6.5+\x*1,10.25) -- ++(0.5,1) -- ++ (0.5, -1);
+}
+\foreach \x in {0,...,0}{
+  \draw  (8.5+\x*1,10.25) -- ++(0.5,1) -- ++ (0.5, -1);
+}
+\draw [->, >=Stealth] (6.25,10.25) -- (10,10.25);
+\node [font=\normalsize] at (5.75,10.25) {0V};
+\draw [dashed] (6.5,11.25) -- (7.5,11.25);
+\node [font=\normalsize] at (5.75,11.25) {12V};
+\end{circuitikz}
+}%
+\label{fig:my_label}
+\end{figure}
+        
+        \item \begin{figure}[ht]
+\resizebox{0.3\textwidth}{!}{%
+\begin{circuitikz}
+\tikzstyle{every node}=[font=\normalsize]
+\draw (7.25,12.5) to[short] (8,12.5);
+\foreach \x in {0,...,0}{
+  \draw  (8+\x*1,12.5) -- ++(0.5,1) -- ++ (0.5, -1);
+}
+\draw (9,12.5) to[short] (9.75,12.5);
+\foreach \x in {0,...,0}{
+  \draw  (9.75+\x*1,12.5) -- ++(0.5,1) -- ++ (0.5, -1);
+}
+\draw (10.75,12.5) to[short] (11.25,12.5);
+\draw [->, >=Stealth] (7.25,11.75) -- (12,11.75);
+\node [font=\normalsize] at (6.25,11.75) {0V};
+\node [font=\normalsize] at (6.25,12.5) {3V};
+\node [font=\normalsize] at (6.25,13.5) {12V};
+\draw [dashed] (8.5,13.5) -- (7.5,13.5);
+\end{circuitikz}
+}%
+\label{fig:my_label}
+\end{figure} 
+
+       \item \begin{figure}[H]
+
+\resizebox{0.3\textwidth}{!}{%
+\begin{circuitikz}
+\tikzstyle{every node}=[font=\normalsize]
+\draw (7.25,12.5) to[short] (8,12.5);
+\foreach \x in {0,...,0}{
+  \draw  (9.75+\x*1,12.5) -- ++(0.5,1) -- ++ (0.5, -1);
+}
+\draw (10.75,12.5) to[short] (11.25,12.5);
+\node [font=\normalsize] at (6.25,11.75) {0V};
+\node [font=\normalsize] at (6.25,13.5) {12V};
+\draw [dashed] (8.5,13.5) -- (7.5,13.5);
+\draw [->, >=Stealth] (7.25,12) -- (11.75,12);
+\foreach \x in {0,...,0}{
+  \draw  (8+\x*1,12.5) -- ++(0.5,1) -- ++ (0.5, -1);
+}
+\draw (9,12.5) to[short] (9.75,12.5);
+\node [font=\normalsize] at (6.25,12.5) {2.3V};
+\end{circuitikz}
+}%
+\label{fig:my_label}
+\end{figure}
+ 
+        
+        \item \begin{figure}[H]
+
+\resizebox{0.3\textwidth}{!}{%
+\begin{circuitikz}
+\tikzstyle{every node}=[font=\normalsize]
+\draw [->, >=Stealth] (7.75,12.25) -- (13.25,12.25);
+\draw [dashed] (9,11.25) -- (8,11.25);
+\node [font=\normalsize] at (6.75,12.25) {0V};
+\node [font=\normalsize] at (6.75,11.25) {-12V};
+\draw (8.25,12.25) to[short] (9.25,11.25);
+\draw (9.25,11.25) to[short] (10.25,12.25);
+\draw (11.25,12.25) to[short] (12.25,11.25);
+\draw (12.25,11.25) to[short] (13.25,12.25);
+\end{circuitikz}
+}%
+\label{fig:my_label}
+\end{figure}
+
+
+    \end{enumerate}
+
+
+
+  $$\textbf{Common Data Questions }$$  
+\textbf{Common Data for Questions 71, 72, 73:} \\
+A particle of mass $m$ is confined in the ground state of a one-dimensional box, extending from $x = -2L$ to $x = +2L$. The wavefunction of the particle in this state is 
+\begin{align*}
+    \psi(x) = \psi_0 \cos\brak{\frac{\pi x}{4L}}
+\end{align*}
+where $\psi_0$ is a constant.
+
+    \item The normalization factor $\psi_0$ of this wavefunction is 
+    \begin{multicols}{4}
+        \begin{enumerate}
+            \item $\frac{\sqrt{2}}{L}$
+            \item $\frac{1}{4L}$
+            \item $\frac{1}{\sqrt{2L}}$
+            \item $\frac{1}{L}$
+        \end{enumerate}
+    \end{multicols}
+
+\item The energy eigenvalue corresponding to this state is 
+\begin{multicols}{4}
+ \begin{enumerate}
+    \item $\frac{\hbar^2 \pi^2}{2mL^2}$
+    \item $\frac{\hbar^2 \pi^2}{4mL^2}$
+    \item $\frac{\hbar^2 \pi^2}{16mL^2}$
+    \item $\frac{\hbar^2 \pi^2}{32mL^2}$
+\end{enumerate}
+\end{multicols}
+
+\item The expectation value of $p^2$ ($p$ is the momentum operator) in this state is 
+\begin{multicols}{4}
+\begin{enumerate}
+    \item 0
+    \item $\frac{\hbar^2 \pi^2}{32L^2}$
+    \item $\frac{\hbar^2 \pi^2}{16L^2}$
+    \item $\frac{\hbar^2 \pi^2}{8L^2}$
+\end{enumerate}
+\end{multicols}
+
+\textbf{Common Data for Questions 74, 75:} \\
+The Fresnel relations between the amplitudes of incident and reflected electromagnetic waves at an interface between air and a dielectric of refractive index $\mu_r$ are:
+\begin{align*}
+    \frac{E_\parallel^\text{reflected}}{E_\parallel^\text{incident}} = \frac{\mu_r \cos r - \cos i}{\mu_r \cos r + \cos i} 
+    \quad \text{and} \quad
+    \frac{E_\perp^\text{reflected}}{E_\perp^\text{incident}} = \frac{\cos i - \mu_r \cos r}{\cos i + \mu_r \cos r}
+\end{align*}
+The subscripts $\parallel$ and $\perp$ refer to polarization, parallel and normal to the plane of incidence respectively. Here, $i$ and $r$ are the angles of incidence and refraction respectively.
+
+\item The condition for the reflected ray to be completely polarized is
+\begin{multicols}{4}
+\begin{enumerate}
+    \item $\mu \cos i = \cos r$
+    \item $\cos i = \mu \cos r$
+    \item $\mu \cos i = -\cos r$
+    \item $\cos i = -\mu \cos r$
+\end{enumerate}
+\end{multicols}
+
+\item For normal incidence at an air-glass interface with $\mu = 1.5$, the fraction of energy reflected is given by
+\begin{multicols}{4}
+\begin{enumerate}
+    \item 0.40
+    \item 0.20
+    \item 0.16
+    \item 0.04
+\end{enumerate}
+\end{multicols}
+$$\textbf{Linked Answer Questions: Q.76 to Q.85 carry two marks each.}$$
+
+\textbf{Statement for Linked Answer Questions 76 and 77:}\\
+In the laboratory frame, a particle P of rest mass $m_e$ is moving in the positive x direction with a speed of $\frac{5c}{19}$. It approaches an identical particle Q, moving in the negative x direction with a speed of $\frac{2c}{5}$.
+
+
+\item The speed of the particle P in the rest frame of the particle Q is
+\begin{multicols}{4}
+\begin{enumerate}
+\item $\frac{7c}{95}$
+\item $\frac{13c}{85}$
+\item $\frac{3c}{5}$
+\item $\frac{63c}{95}$
+\end{enumerate}
+\end{multicols}
+
+
+\item The energy of the particle P in the rest frame of the particle Q is
+\begin{multicols}{4}
+\begin{enumerate}
+\item $\frac{1}{2}m_{g}c^{2}$
+\item $\frac{5}{4}m_{0}c^{2}$
+\item $\frac{19}{13}m_{0}c^{2}$
+\item $\frac{11}{2}m$
+\end{enumerate}
+\end{multicols}
+    \textbf{Statement for Linked Answer Questions 78 and 79}
+
+The atomic density of a solid is $5.85\times10^{32}m^{-3}$. Its electrical resistivity is $1.6\times10^{-2}\Omega~m.$
+
+Assume that electrical conduction is described by the Drude model (classical theory), and that each atom contributes one conduction electron.
+
+
+\item The drift mobility (in $m^{2}V^{-1}s.^{-1}$) of the conduction electrons is
+\begin{multicols}{4}
+\begin{enumerate}
+\item $6.67\times10^{-3}$
+\item $6.67\times10^{-6}$
+\item $7.63\times10^{-1}$
+\item $7.63\times10^{-9}$
+\end{enumerate}
+\end{multicols}
+
+\item The relaxation time (mean free time), in seconds, of the conduction electrons is
+\begin{multicols}{4}
+\begin{enumerate}
+\item $3.98\times10^{-13}$
+\item $3.79\times10^{-14}$
+\item $2.84\times10^{-12}$
+\item $2.64\times10^{-11}$
+\end{enumerate}
+\end{multicols}
+    \textbf{Statement for Linked Answer Questions 80 and 81:}
+
+A sphere of radius R carries a polarization $\overrightarrow{P}=kr$, where k is a constant and $\overrightarrow{r}$ is measured from the centre of the sphere.
+
+\item The bound surface and volume charge densities are given, respectively, by
+\begin{multicols}{2}
+\begin{enumerate}
+\item $-k\abs{\overrightarrow{r}}$ and $3k$
+\item $k\abs{\overrightarrow{r}}$ and $-3k$
+\item $k\abs{\overrightarrow{r}}$ and $4\pi kR$
+\item $-k\abs{\overrightarrow{r}}$ and $-4\pi kR$
+\end{enumerate}
+\end{multicols}
+
+\item The electric field $\overrightarrow{E}$ at a point outside the sphere is given by
+\begin{multicols}{4}
+\begin{enumerate}
+\item $\overrightarrow{E}=0$
+\item $\overrightarrow{E}=\frac{kR\brak{R^2-r^2}}{4\pi\epsilon_0r^3}\hat{r}$
+\item $\overrightarrow{E}=\frac{kR\brak{R^2-r^2}}{4\pi\epsilon_0r^3}\hat{r}$
+\item $\overrightarrow{E}=\frac{3k\brak{r-R}}{4\pi\epsilon_0r^4}\hat{r}$
+\end{enumerate}
+\end{multicols}
+
+    \textbf{Statement for Linked Answer Questions 82 and 83:}
+
+An ensemble of quantum harmonic oscillators is kept at a finite temperature $T=\frac{1}{k_B\beta}$.
+
+\item The partition function of a single oscillator with energy levels $\brak{n+\frac{1}{2}}\hbar\omega$ is given by
+\begin{multicols}{4}
+\begin{enumerate}
+\item $Z=\frac{e^{-\beta\hbar\omega/2}}{1-e^{-\beta\hbar\omega}}$
+\item $Z=\frac{e^{-\beta\hbar\omega}}{1-e^{-\beta\hbar\omega}}$
+\item $Z=\frac{1}{1-e^{-\beta\hbar\omega}}$
+\item $Z=\frac{1}{1-e^{-2\beta\hbar\omega-\mu}}$
+\end{enumerate}
+\end{multicols}
+
+\item The average number of energy quanta of the oscillators is given by
+\begin{multicols}{4}
+\begin{enumerate}
+\item $\langle n \rangle = \frac{1}{e^{\beta\hbar\omega}-1}$
+\item $\langle n \rangle = \frac{e^{-\beta\hbar\omega}}{e^{\beta\hbar\omega}-1}$
+\item $\langle n \rangle = \frac{e^{-2\beta\hbar\omega}}{e^{2\beta\hbar\omega}+1}$
+\item $\langle n \rangle = \frac{1}{e^{\beta\hbar\omega}+1}$
+\end{enumerate}
+\end{multicols}
+
+ \textbf{Statement for Linked Answer Questions 84 and 85:}
+
+A 16 $\mu A$ beam of alpha particles, having cross-sectional area $10^{-4}m^{2}$, is incident on a rhodium target of thickness 1 $\mu m$. This produces neutrons through the reaction $^{103}Rh + \alpha \rightarrow ^{106}Pd + 3n$.
+
+\item The number of alpha particles hitting the target per second is
+\begin{multicols}{4}
+\begin{enumerate}
+\item $0.5\times10^{14}$
+\item $1.0\times10^{14}$
+\item $2.0\times10^{20}$
+\item $4.0\times10^{19}$
+\end{enumerate}
+\end{multicols}
+
+\item The neutrons are observed at the rate of $1.806\times10^{8}s^{-1}$. If the density of rhodium is approximated as $10^{4}kg~m^{-3}$, the cross-section for the reaction (in barns) is
+\begin{multicols}{4}
+\begin{enumerate}
+\item 0.1
+\item 0.2
+\item 0.4
+\item 0.8
+\end{enumerate}
+\end{multicols}
+
+
+
+\end{enumerate}
+\end{document}
