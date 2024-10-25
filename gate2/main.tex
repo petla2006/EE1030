@@ -1,0 +1,246 @@
+\let\negmedspace\undefined
+\let\negthickspace\undefined
+\documentclass[journal]{IEEEtran}
+\usepackage[a5paper, margin=10mm, onecolumn]{geometry}
+%\usepackage{lmodern} % Ensure lmodern is loaded for pdflatex
+\usepackage{tfrupee} % Include tfrupee package
+
+\setlength{\headheight}{1cm} % Set the height of the header box
+\setlength{\headsep}{0mm}     % Set the distance between the header box and the top of the text
+
+\usepackage{gvv-book}
+\usepackage{gvv}
+\usepackage{cite}
+\usepackage{amsmath,amssymb,amsfonts,amsthm}
+\usepackage{algorithmic}
+\usepackage{graphicx}
+\usepackage{textcomp}
+\usepackage{xcolor}
+\usepackage{txfonts}
+\usepackage{listings}
+\usepackage{enumitem}
+\usepackage{mathtools}
+\usepackage{gensymb}
+\usepackage{comment}
+\usepackage[breaklinks=true]{hyperref}
+\usepackage{tkz-euclide} 
+\usepackage{listings}
+
+% \usepackage{gvv}                                        
+\def\inputGnumericTable{}                                 
+\usepackage[latin1]{inputenc}                                
+\usepackage{color}                                            
+\usepackage{array}                                            
+\usepackage{longtable}                                       
+\usepackage{calc}  
+\usepackage{circuitikz}
+\usepackage{multirow}                                         
+\usepackage{hhline}                                           
+\usepackage{ifthen}                                           
+\usepackage{lscape}
+\usepackage{tikz}
+\begin{document}
+
+\bibliographystyle{IEEEtran}
+\vspace{3cm}
+
+
+\renewcommand{\thefigure}{\theenumi}
+\renewcommand{\thetable}{\theenumi}
+\setlength{\intextsep}{10pt} % Space between text and floats
+
+
+\numberwithin{equation}{enumi}
+\numberwithin{figure}{enumi}
+\renewcommand{\thetable}{\theenumi}
+
+\title{Gate AE-2010}
+\author{AI24BTECH11034 Tanush Sri Sai Petla
+}
+\maketitle
+\renewcommand{\thefigure}{\theenumi}
+\renewcommand{\thetable}{\theenumi}
+\begin{enumerate}[start=1]
+
+\item  Isentropic efficiency $\eta_e$ of a subsonic diffuser is defined as:
+
+(Note: 'a' represents the ambient, '2' represents the exit of the diffuser, and 's' represents an isentropic process.)
+
+\begin{multicols}{4}
+\begin{enumerate}
+    \item $\frac{T_{O2s}-T_{a}}{T_{O2}-T_{a}}$
+    \item $\frac{T_{O2s}+T_{a}}{T_{O2}+T_{a}}$
+    \item $\frac{P_{O2s}-P_{a}}{P_{o2}-P_{a_s}}$
+    \item $\frac{P_{a}-P_{O2s}}{P_{a}-P_{O2}}$
+\end{enumerate}
+\end{multicols}
+
+\item Two position vectors are indicated by $\overline{V}_1 = \cbrak{\begin{matrix} x_1 \\ y_1 \end{matrix}}$ and $\overline{V}_2 = \cbrak{\begin{matrix} x_2 \\ y_2 \end{matrix}}$. If $a^2 + b^2 = 1$, then the operation $\overline{V}_2 = \begin{bmatrix} a & -b \\ b & a \end{bmatrix} \overline{V}_1$
+   amounts to obtaining the position vector $\overline{V}_2$ from $\overline{V}_1$ by
+
+\begin{enumerate}
+    \item translation
+    \item rotation
+    \item magnification
+    \item combination of translation, rotation, and magnification
+\end{enumerate}
+
+\item An aircraft is climbing at a constant speed in a straight line at a steep angle of climb. The load factor it sustains during the climb is:
+
+\begin{multicols}{2}
+\begin{enumerate}
+    \item equal to $1.0$
+    \item greater than $1.0$
+    \item positive but less than $1.0$
+    \item dependent on the weight of the aircraft
+\end{enumerate}
+\end{multicols}
+
+\item In a general case of a homogeneous material under thermo-mechanical loading, the number of distinct components of the state of stress is:
+\begin{multicols}{4}
+\begin{enumerate}
+    \item $3$ 
+    \item $4$ 
+    \item $5$ 
+    \item $6$
+\end{enumerate}
+\end{multicols}
+
+\item The linear second-order partial differential equation:
+$5 \frac{\partial^2 \phi}{\partial x^2} + 3 \frac{\partial^2 \phi}{\partial x \partial y} + 2 \frac{\partial^2 \phi}{\partial y^2} + 9 = 0$ is:
+\begin{multicols}{2}
+\begin{enumerate}
+    \item Parabolic
+    \item Hyperbolic
+    \item Elliptic
+    \item None of the above
+\end{enumerate}
+\end{multicols}
+
+\item All other factors remaining constant, if the weight of an aircraft increases by 30\%, then the takeoff distance increases by approximately:
+\begin{multicols}{4}
+\begin{enumerate}
+    \item 15\%
+    \item 30\%
+    \item 70\% 
+    \item 105\%
+\end{enumerate}
+\end{multicols}
+
+\item A vertical slender rod is suspended by a hinge at the top and hangs freely. It is heated until it attains a uniform temperature. Neglecting the effect of gravity, the rod has
+\begin{multicols}{2}
+\begin{enumerate}
+    \item Stress but no strain
+    \item Strain but no stress
+    \item Both stress and strain
+    \item Neither stress nor strain
+\end{enumerate}
+\end{multicols}
+
+ \item An aircraft stalls at a speed of 40 m/s in straight and level flight. The slowest speed at which this aircraft can execute a level turn at a bank angle of 60 degrees is:
+    \begin{multicols}{4}
+    \begin{enumerate}
+    \item  28.3 m/s
+    \item  40.0 m/s
+    \item  56.6 m/s
+    \item  80.0 m/s
+\end{enumerate}
+ \end{multicols}
+
+\item The eigen-values of a real symmetric matrix are always
+    \begin{multicols}{2}
+        \begin{enumerate}
+        \item positive
+        \item imaginary
+        \item real
+        \item complex conjugate pairs
+        \end{enumerate}
+        \end{multicols}
+        
+         
+\item The concentrations of a certain chemical species at time $t$ in a chemical reaction is described by the differential equation $\frac{dx}{dt}+kx=0$, with $x\brak{t=0}=x_{0}$. Given that $e$ is the base of the natural logarithms, the concentration $x$ at $t=\frac{1}{k}$
+       \begin{multicols}{2}
+        \begin{enumerate}
+        \item falls to the value $0.5x_{0}$
+        \item rises to the value $2x_{0}$
+        \item falls to the value $\frac{x_{0}}{e}$
+        \item rises to the value $ex_{0}$
+        \end{enumerate}
+        \end{multicols}
+
+\item The definite integral $\int_{-1}^{+1}\frac{dx}{x^{2}}$
+\begin{multicols}{4}
+    \begin{enumerate}
+    \item does not exist
+    \item is equal to 2
+    \item is equal to 0
+    \item is equal to -2
+    \end{enumerate}
+    \end{multicols}
+    
+\item The absolute ceiling of an aircraft is the altitude above which it:
+    \begin{enumerate}
+    \item can never reach
+    \item cannot sustain level flight at a constant speed
+    \item can perform accelerated flight as well as straight and level flight at a constant speed
+    \item can perform straight and level flight at a constant speed only
+    \end{enumerate}
+
+\item A thin rectangular plate made of isotropic material which satisfies the octahedral \brak{\text{i.e., Von Mises/Distortion energy}} failure criterion has yield strength of 200 MPa under uniaxial tension. As shown in the figure, if it is loaded with uniform tension of 150 MPa along the x-direction, the maximum uniform tensile stress that can be applied along the y-direction before the plate starts yielding is about
+
+    \begin{figure}[H]
+\centering
+\resizebox{0.5\textwidth}{!}{%
+\begin{circuitikz}
+\tikzstyle{every node}=[font=\small]
+\draw  (9.75,12.5) rectangle (12.5,11.25);
+\draw [->, >=Stealth] (10,12.5) -- (10,13);
+\draw [->, >=Stealth] (10.25,12.5) -- (10.25,13);
+\draw [->, >=Stealth] (10.5,12.5) -- (10.5,13);
+\draw [->, >=Stealth] (10.75,12.5) -- (10.75,13);
+\draw [->, >=Stealth] (11,12.5) -- (11,13);
+\draw [->, >=Stealth] (11.25,12.5) -- (11.25,13);
+\draw [->, >=Stealth] (11.5,12.5) -- (11.5,13);
+\draw [->, >=Stealth] (11.75,12.5) -- (11.75,13);
+\draw [->, >=Stealth] (12,12.5) -- (12,13);
+\draw [->, >=Stealth] (12.25,12.5) -- (12.25,13);
+\draw [->, >=Stealth] (12.5,12.25) -- (13,12.25);
+\draw [->, >=Stealth] (12.5,12) -- (13,12);
+\draw [->, >=Stealth] (12.5,11.75) -- (13,11.75);
+\draw [->, >=Stealth] (12.5,11.5) -- (13,11.5);
+\draw [->, >=Stealth] (12.25,11.25) -- (12.25,10.75);
+\draw [->, >=Stealth] (12,11.25) -- (12,10.75);
+\draw [->, >=Stealth] (11.75,11.25) -- (11.75,10.75);
+\draw [->, >=Stealth] (11.5,11.25) -- (11.5,10.75);
+\draw [->, >=Stealth] (11.25,11.25) -- (11.25,10.75);
+\draw [->, >=Stealth] (11,11.25) -- (11,10.75);
+\draw [->, >=Stealth] (10.75,11.25) -- (10.75,10.75);
+\draw [->, >=Stealth] (10.5,11.25) -- (10.5,10.75);
+\draw [->, >=Stealth] (10.25,11.25) -- (10.25,10.75);
+\draw [->, >=Stealth] (10,11.25) -- (10,10.75);
+\draw [->, >=Stealth] (9.75,12.25) -- (9.25,12.25);
+\draw [->, >=Stealth] (9.75,12) -- (9.25,12);
+\draw [->, >=Stealth] (9.75,11.75) -- (9.25,11.75);
+\draw [->, >=Stealth] (9.75,11.5) -- (9.25,11.5);
+\draw [->, >=Stealth, dashed] (10.75,11.75) -- (11.75,11.75);
+\draw [->, >=Stealth, dashed] (10.75,11.75) -- (10.75,12.5);
+\node [font=\small] at (10.5,12.25) {y};
+\node [font=\small] at (11.25,11.5) {x};
+\node [font=\small] at (11.25,13.5) {$\sigma_{xy}$};
+\node [font=\small] at (14.25,12) {$\sigma_{M}=150 MPa $};
+\end{circuitikz}
+}%
+\label{fig:my_label}
+\end{figure}           
+        \begin{multicols}{4}
+        \begin{enumerate}
+            \item $227$ MPa
+            \item $77$ MPa
+            \item $87$ MPa
+            \item $114$ MPa
+        \end{enumerate}
+        \end{multicols}
+
+
+\end{enumerate}
+\end{document}
