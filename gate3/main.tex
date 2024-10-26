@@ -1,0 +1,352 @@
+\let\negmedspace\undefined
+\let\negthickspace\undefined
+\documentclass[journal]{IEEEtran}
+\usepackage[a5paper, margin=10mm, onecolumn]{geometry}
+%\usepackage{lmodern} % Ensure lmodern is loaded for pdflatex
+\usepackage{tfrupee} % Include tfrupee package
+
+\setlength{\headheight}{1cm} % Set the height of the header box
+\setlength{\headsep}{0mm}     % Set the distance between the header box and the top of the text
+
+\usepackage{gvv-book}
+\usepackage{gvv}
+\usepackage{cite}
+\usepackage{amsmath,amssymb,amsfonts,amsthm}
+\usepackage{algorithmic}
+\usepackage{graphicx}
+\usepackage{textcomp}
+\usepackage{xcolor}
+\usepackage{txfonts}
+\usepackage{listings}
+\usepackage{enumitem}
+\usepackage{mathtools}
+\usepackage{gensymb}
+\usepackage{comment}
+\usepackage[breaklinks=true]{hyperref}
+\usepackage{tkz-euclide} 
+\usepackage{listings}
+
+% \usepackage{gvv}                                        
+\def\inputGnumericTable{}                                 
+\usepackage[latin1]{inputenc}                                
+\usepackage{color}                                            
+\usepackage{array}                                            
+\usepackage{longtable}                                       
+\usepackage{calc}  
+\usepackage{circuitikz}
+\usepackage{multirow}                                         
+\usepackage{hhline}                                           
+\usepackage{ifthen}                                           
+\usepackage{lscape}
+\usepackage{tikz}
+\begin{document}
+
+\bibliographystyle{IEEEtran}
+\vspace{3cm}
+
+
+\renewcommand{\thefigure}{\theenumi}
+\renewcommand{\thetable}{\theenumi}
+\setlength{\intextsep}{10pt} % Space between text and floats
+
+
+\numberwithin{equation}{enumi}
+\numberwithin{figure}{enumi}
+\renewcommand{\thetable}{\theenumi}
+
+\title{Gate PH-2010}
+\author{AI24BTECH11034 Tanush Sri Sai Petla
+}
+\maketitle
+\renewcommand{\thefigure}{\theenumi}
+\renewcommand{\thetable}{\theenumi}
+\begin{enumerate}[start=27]
+\item The solution of the differential equation for $y\brak{t}$:  $\frac{d^2y}{dt^2} - y = 2 \cosh\brak{t}$, subject to the initial conditions $y\brak{0} = 0$ and $\frac{dy}{dt}|_{t=0} = 0$, is:
+\begin{multicols}{2}
+\begin{enumerate}
+    \item $\frac{1}{2}\cosh\brak{t} + t\sinh\brak{t}$
+    \item $-\sinh\brak{t} + t\cosh\brak{t}$
+    \item $t\cosh\brak{t}$
+    \item $t\sinh\brak{t}$
+\end{enumerate}
+\end{multicols}
+
+\item Given the recurrence relation for the Legendre polynomials:
+\begin{align*}
+\brak{2n+1}P_n\brak{x} = \brak{n+1}P_{n+1}\brak{x} + nP_{n-1}\brak{x}
+\end{align*}
+which of the following integrals has a non-zero value?
+\begin{multicols}{2}
+\begin{enumerate}
+    \item $\int_{-1}^{1} x^2 P_n\brak{x} P_{n+1}\brak{x} dx$
+    \item $\int_{-1}^{1} x P_n\brak{x} P_{n+2}\brak{x} dx$
+    \item $\int_{-1}^{1} x \sbrak{P_n\brak{x}}^2 dx$
+    \item $\int_{-1}^{1} x^2 P_n\brak{x} P_{n+2}\brak{x} dx$
+\end{enumerate}
+\end{multicols}
+
+\item For a two-dimensional free electron gas, the electronic density n and the Fermi energy $E_f$ are related by:
+\begin{multicols}{2}
+\begin{enumerate}
+\item n = $\frac{\brak{2mE_f}^{\frac{3}{2}}}{3\pi^2\hbar^3}$\\
+
+\item n = $\frac{mE_f}{\pi\hbar^2}$
+
+\item n = $\frac{mE_f}{2\pi\hbar^2}$\\
+
+\item n = $\frac{2^{\frac{3}{2}}\brak{mE_f}^{\frac{1}{2}}}{\pi\hbar}$
+
+\end{enumerate}
+\end{multicols}
+
+\item Far away from any of the resonance frequencies of a medium, the real part of the dielectric permittivity is
+\begin{enumerate}
+\item Always independent of frequency
+\item Monotonically decreasing with frequency
+\item Monotonically increasing with frequency
+\item A non-monotonic function of frequency
+\end{enumerate}
+
+\item The ground state wavefunction of a deuteron is in a superposition of s and d states. Which of the following is NOT true as a consequence?
+\begin{enumerate}
+\item It has a non-zero quadrupole moment
+\item The neutron-proton potential is non-central
+\item The orbital wavefunction is not spherically symmetric
+\item The Hamiltonian does not conserve the total angular momentum
+\end{enumerate}
+
+\item The first three energy levels of $^{228}\text{Th}_{90}$ are shown below:
+
+\begin{figure}[H]
+\centering
+\resizebox{0.4\textwidth}{!}{%
+\begin{circuitikz}
+\tikzstyle{every node}=[font=\small]
+\draw (8.25,12.25) to[short] (11,12.25);
+\draw (8.25,11.75) to[short] (11,11.75);
+\draw (8.25,11.25) to[short] (11,11.25);
+\node [font=\small] at (11.5,11.25) {0 keV};
+\node [font=\small] at (11.75,11.75) {57.5 keV};
+\node [font=\small] at (11.75,12.25) {187 keV};
+\node [font=\small] at (7.75,11.25) {$0^+$};
+\node [font=\small] at (7.75,11.75) {$2^+$};
+\node [font=\small] at (7.75,12.25) {$4^+$};
+\end{circuitikz}
+}%
+\label{fig:my_label}
+\end{figure}
+The expected spin-parity and energy of the next level are given by:
+\begin{multicols}{2}
+\begin{enumerate}
+\item $\brak{6^+, 400 \text{ keV}}$
+\item $\brak{6^+, 300 \text{ keV}}$
+\item $\brak{2^+, 400 \text{ keV}}$
+\item $\brak{4^+, 300 \text{ keV}}$
+\end{enumerate} 
+\end{multicols}
+
+\item The quark content of $\Sigma^+, K, \pi$ and p is indicated:
+\begin{align*}
+|\Sigma^+\rangle &= |uus\rangle; \quad |K^+\rangle = |us\rangle; \quad |\pi^+\rangle = |ud\rangle; \quad |p\rangle = |uud\rangle.
+\end{align*}
+In the process, $\pi^{-} + p \rightarrow K^{-} + \Sigma^{\prime}$, considering strong interactions only, which of the following statements is true?
+
+\begin{enumerate}
+    \item The process is allowed because $\Delta S = 0$.
+    \item The process is allowed because $\Delta I_{y} = 0$.
+    \item The process is not allowed because $\Delta S \neq 0$ and $\Delta I_{z} \neq 0$.
+    \item The process is not allowed because the baryon number is violated.
+\end{enumerate}
+
+\item The three principal moments of inertia of a methanol (CH$_3$OH) molecule have the property $I_x = I_y = I$ and $I_z \neq I$. The rotational energy eigenvalues are
+\begin{multicols}{2}
+\begin{enumerate}
+    \item $\frac{\hbar^2}{2I}l\brak{l+1} + \frac{\hbar^2 m_i^2}{2}\brak{\frac{1}{I_i} - \frac{1}{I}}$\\
+    \item $\frac{\hbar^2}{2I}l\brak{l+1}$
+    \item $\frac{\hbar^2 m_i^2}{2}\brak{\frac{1}{I_i} - \frac{1}{I}}$\\
+    \item $\frac{\hbar^2}{2I}l\brak{l+1} + \frac{\hbar^2 m_i^2}{2}\brak{\frac{1}{I_i} + \frac{1}{I}}$
+\end{enumerate}
+\end{multicols}
+\item A particle of mass $m$ is confined in the potential 
+
+\begin{equation*}
+V(x) = \begin{cases}
+\frac{1}{2}m\omega^2 x^2 & \text{for } x > 0, \\
+\infty & \text{for } x \leq 0.
+\end{cases}
+\end{equation*}
+
+Let the wavefunction of the particle is given by
+
+\begin{align*}
+\psi(x) = -\frac{1}{\sqrt{5}}\psi_0 + \frac{2}{\sqrt{5}}\psi_1,
+\end{align*}
+
+where $\psi_0$ and $\psi_1$ are the eigenfunctions of the ground state and the first excited state, respectively. The expectation value of the energy is
+\begin{figure}[H]
+\centering
+\resizebox{0.5\textwidth}{!}{%
+\begin{circuitikz}
+\tikzstyle{every node}=[font=\normalsize]
+\draw [->, >=Stealth] (9,10.75) -- (12.75,10.75);
+\draw [->, >=Stealth] (9,10.75) -- (9,13.5);
+\begin{scope}[rotate around={-135:(11.5,13)}]
+\draw[domain=11.5:14.75,samples=100,smooth] plot (\x,{1*sin(1*\x r -11.5 r ) +13});
+\end{scope}
+\node [font=\normalsize] at (8.75,10.5) {0};
+\node [font=\normalsize] at (12.25,10.25) {x};
+\node [font=\normalsize] at (8,13.25) {$v\brak{x}$};
+\end{circuitikz}
+}%
+\label{fig:my_label}
+\end{figure}
+
+\begin{multicols}{4}
+\begin{enumerate}
+\item $\frac{31}{10}\hbar\omega$ 
+\item $\frac{25}{10}\hbar\omega$ 
+\item $\frac{13}{10}\hbar\omega$
+\item $\frac{11}{10}\hbar\omega$
+\end{enumerate}
+\end{multicols}
+
+\item Match the typical spectra of stable molecules with the corresponding wave-number range:
+\begin{multicols}{2}
+			\begin{enumerate}[label=(\Alph*)]
+                
+				\item Electronic spectra
+				\item Rotational spectra
+                    \item Molecular dissociation
+			\end{enumerate}
+			\columnbreak
+			\begin{enumerate}[label=(\arabic*)]
+				\item $10^6 cm^{-1}$ and above
+				\item $10^5 - 10^6 cm^{-1}$
+				\item $10^0 - 10^2 cm^{-1}$
+                    
+			\end{enumerate}
+		\end{multicols}
+
+      \begin{multicols}{2}
+        \begin{enumerate}
+            \item $A-2,B-1,C-3$
+            \item $A-2,B-3,C-1$
+            \item $A-3,B-2,C-1$
+            \item $A-1,B-2,C-3$
+        \end{enumerate}
+    \end{multicols}
+ 
+\item Consider the operations $P: \bar{r} \rightarrow -\bar{r}$ (parity) and $T: t \rightarrow -t$ (time-reversal). For the electric and magnetic fields $\bar{E}$ and $\bar{B}$, which of the following set of transformations is correct?
+\begin{multicols}{2}
+\begin{enumerate}
+\item $P: \bar{E} \rightarrow -\bar{E}, \bar{B} \rightarrow \bar{B}$;\\ $T: \bar{E} \rightarrow \bar{E}, \bar{B} \rightarrow -\bar{B}$
+\item $P: \bar{E} \rightarrow \bar{E}, \bar{B} \rightarrow \bar{B}$;\\ $T: \bar{E} \rightarrow \bar{E}, \bar{B} \rightarrow \bar{B}$
+\item $P: \bar{E} \rightarrow -\bar{E}, \bar{B} \rightarrow \bar{B}$;\\ $T: \bar{E} \rightarrow -\bar{E}, \bar{B} \rightarrow -\bar{B}$
+\item $P: \bar{E} \rightarrow \bar{E}, \bar{B} \rightarrow -\bar{B}$; \\$T: \bar{E} \rightarrow -\bar{E}, \bar{B} \rightarrow \bar{B}$
+\end{enumerate}
+\end{multicols}
+
+\item Two magnetic dipoles of magnitude $m$ each are placed in a plane as shown.
+\begin{figure}[H]
+\centering
+\resizebox{0.3\textwidth}{!}{%
+\begin{circuitikz}
+\tikzstyle{every node}=[font=\normalsize]
+\draw [dashed] (8.25,13.75) -- (8.25,10);
+\draw (8.25,10) to[short] (12.75,14.5);
+\draw [dashed] (12.75,14.5) -- (8.25,14.5);
+\draw [dashed] (8.25,14.5) -- (8.25,13.75);
+\draw [->, >=Stealth] (12.25,14.5) -- (13.25,14.5);
+\draw [->, >=Stealth] (8.25,9.75) -- (8.25,10.5);
+\node [font=\normalsize] at (11.5,12) {d};
+\node [font=\normalsize] at (7.5,10) {m};
+\node [font=\normalsize] at (12.75,15) {m};
+\node [font=\normalsize] at (12.75,14) {2};
+\node [font=\normalsize] at (8.5,10) {1};
+\node [font=\normalsize] at (11.5,14) {$45^\circ$};
+\node [font=\normalsize] at (8.75,11.25) {$45^\circ$};
+\draw (11.75,14.5) to[short] (12.25,14);
+\draw (8.25,11) to[short] (8.75,10.5);
+\end{circuitikz}
+}%
+\label{fig:my_label}
+\end{figure}
+
+The energy of interaction is given by:
+\begin{multicols}{2}
+\begin{enumerate}
+\item Zero
+\item $\dfrac{\mu_0}{4\pi} \dfrac{m^2}{d^3}$
+\item $\dfrac{3\mu_0}{2\pi} \dfrac{m^2}{d^3}$
+\item $-\dfrac{3\mu_0}{8\pi} \dfrac{m^2}{d^3}$
+\end{enumerate}
+\end{multicols}
+
+\item Consider a conducting loop of radius $a$ and total loop resistance $R$ placed in a region with a magnetic field $B$, thereby enclosing a flux $\Phi_0$. The loop is connected to an electronic circuit as shown, the capacitor being initially uncharged.
+\begin{figure}[H]
+\centering
+\resizebox{0.4\textwidth}{!}{%
+\begin{circuitikz}
+\tikzstyle{every node}=[font=\normalsize]
+\draw  (7.75,13) circle (1cm);
+\draw (8.75,13.25) to[short] (12.5,13.25);
+\draw (8.75,13) to[short] (12.5,13);
+\draw (12.5,13.25) to[short] (12.5,13.75);
+\draw (12.5,13) to[short] (12.5,12.5);
+\draw [short] (16.25,13.25) -- (15,14.25);
+\draw [short] (16.25,13.25) -- (15,12);
+\draw [short] (15,14.25) -- (15,12);
+\draw (12.5,13.75) to[short] (15,13.75);
+\draw (12.5,12.5) to[short] (15,12.5);
+\node at (14.25,13.75) [circ] {};
+\draw (14.25,13.75) to[short] (14.25,15);
+\draw (14.25,15) to[C] (17,15);
+\node at (14.25,12.5) [circ] {};
+\draw (14.25,12.5) to (14.25,11.75) node[ground]{};
+\draw (16.25,13.25) to[short] (17.5,13.25);
+\draw (17,15) to[short] (17,13.25);
+\node at (17,13.25) [circ] {};
+\draw  (6,14.5) rectangle (9.5,11.25);
+\node [font=\LARGE] at (6.25,14.25) {$\times$};
+\node [font=\LARGE] at (7,14.25) {$\times$};
+\node [font=\LARGE] at (7.75,14.25) {$\times$};
+\node [font=\LARGE] at (8.5,14.25) {$\times$};
+\node [font=\LARGE] at (9.25,14.25) {$\times$};
+\node [font=\LARGE] at (6.25,13.5) {$\times$};
+\node [font=\LARGE] at (7.5,13.5) {$\times$};
+\node [font=\LARGE] at (8.5,13.5) {$\times$};
+\node [font=\LARGE] at (7,13.5) {$\times$};
+\node [font=\LARGE] at (9.25,13.5) {$\times$};
+\node [font=\LARGE] at (6.25,12.5) {$\times$};
+\node [font=\LARGE] at (7,12.5) {$\times$};
+\node [font=\LARGE] at (7.75,12.5) {$\times$};
+\node [font=\LARGE] at (8.5,12.5) {$\times$};
+\node [font=\LARGE] at (9.25,12.5) {$\times$};
+\node [font=\LARGE] at (6.25,11.75) {$\times$};
+\node [font=\LARGE] at (7,11.75) {$\times$};
+\node [font=\LARGE] at (7.75,11.75) {$\times$};
+\node [font=\LARGE] at (8.5,11.75) {$\times$};
+\node [font=\LARGE] at (9.25,11.75) {$\times$};
+\node [font=\LARGE] at (8.75,13.25) {\textbf{B}};
+\node [font=\normalsize] at (15.5,15.75) {C};
+\node [font=\normalsize] at (18,13.25) {$V_{out}$};
+\node [font=\normalsize] at (15.25,13.75) {$-$};
+\node [font=\normalsize] at (15.25,12.5) {$+$};
+\end{circuitikz}
+}%
+\label{fig:my_label}
+\end{figure}
+
+
+If the loop is pulled out of the region of the magnetic field at a constant speed $v$, the final output voltage $V_{out}$ is independent of:
+\begin{multicols}{2}
+\begin{enumerate}
+ \item $\Phi_0$
+ \item $R$
+ \item $u$
+ \item $C$
+ \end{enumerate}
+ \end{multicols}
+
+ \end{enumerate}
+\end{document}
