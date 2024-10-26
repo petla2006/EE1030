@@ -1,0 +1,24 @@
+\begin{figure}[H]
+\centering
+\resizebox{0.3\textwidth}{!}{%
+\begin{circuitikz}
+\tikzstyle{every node}=[font=\normalsize]
+\draw [dashed] (8.25,13.75) -- (8.25,10);
+\draw (8.25,10) to[short] (12.75,14.5);
+\draw [dashed] (12.75,14.5) -- (8.25,14.5);
+\draw [dashed] (8.25,14.5) -- (8.25,13.75);
+\draw [->, >=Stealth] (12.25,14.5) -- (13.25,14.5);
+\draw [->, >=Stealth] (8.25,9.75) -- (8.25,10.5);
+\node [font=\normalsize] at (11.5,12) {d};
+\node [font=\normalsize] at (7.5,10) {m};
+\node [font=\normalsize] at (12.75,15) {m};
+\node [font=\normalsize] at (12.75,14) {2};
+\node [font=\normalsize] at (8.5,10) {1};
+\node [font=\normalsize] at (11.5,14) {$45^\circ$};
+\node [font=\normalsize] at (8.75,11.25) {$45^\circ$};
+\draw (11.75,14.5) to[short] (12.25,14);
+\draw (8.25,11) to[short] (8.75,10.5);
+\end{circuitikz}
+}%
+\label{fig:my_label}
+\end{figure}

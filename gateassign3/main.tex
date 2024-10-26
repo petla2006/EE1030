@@ -117,24 +117,7 @@ which of the following integrals has a non-zero value?
 
 \item The first three energy levels of $^{228}\text{Th}_{90}$ are shown below:
 
-\begin{figure}[H]
-\centering
-\resizebox{0.4\textwidth}{!}{%
-\begin{circuitikz}
-\tikzstyle{every node}=[font=\small]
-\draw (8.25,12.25) to[short] (11,12.25);
-\draw (8.25,11.75) to[short] (11,11.75);
-\draw (8.25,11.25) to[short] (11,11.25);
-\node [font=\small] at (11.5,11.25) {0 keV};
-\node [font=\small] at (11.75,11.75) {57.5 keV};
-\node [font=\small] at (11.75,12.25) {187 keV};
-\node [font=\small] at (7.75,11.25) {$0^+$};
-\node [font=\small] at (7.75,11.75) {$2^+$};
-\node [font=\small] at (7.75,12.25) {$4^+$};
-\end{circuitikz}
-}%
-\label{fig:my_label}
-\end{figure}
+\input{figs/fig1.tex}
 The expected spin-parity and energy of the next level are given by:
 \begin{multicols}{2}
 \begin{enumerate}
@@ -183,23 +166,7 @@ Let the wavefunction of the particle is given by
 \end{align*}
 
 where $\psi_0$ and $\psi_1$ are the eigenfunctions of the ground state and the first excited state, respectively. The expectation value of the energy is
-\begin{figure}[H]
-\centering
-\resizebox{0.5\textwidth}{!}{%
-\begin{circuitikz}
-\tikzstyle{every node}=[font=\normalsize]
-\draw [->, >=Stealth] (9,10.75) -- (12.75,10.75);
-\draw [->, >=Stealth] (9,10.75) -- (9,13.5);
-\begin{scope}[rotate around={-135:(11.5,13)}]
-\draw[domain=11.5:14.75,samples=100,smooth] plot (\x,{1*sin(1*\x r -11.5 r ) +13});
-\end{scope}
-\node [font=\normalsize] at (8.75,10.5) {0};
-\node [font=\normalsize] at (12.25,10.25) {x};
-\node [font=\normalsize] at (8,13.25) {$v\brak{x}$};
-\end{circuitikz}
-}%
-\label{fig:my_label}
-\end{figure}
+\input{figs/fig2.tex}
 
 \begin{multicols}{4}
 \begin{enumerate}
@@ -247,30 +214,7 @@ where $\psi_0$ and $\psi_1$ are the eigenfunctions of the ground state and the f
 \end{multicols}
 
 \item Two magnetic dipoles of magnitude $m$ each are placed in a plane as shown.
-\begin{figure}[H]
-\centering
-\resizebox{0.3\textwidth}{!}{%
-\begin{circuitikz}
-\tikzstyle{every node}=[font=\normalsize]
-\draw [dashed] (8.25,13.75) -- (8.25,10);
-\draw (8.25,10) to[short] (12.75,14.5);
-\draw [dashed] (12.75,14.5) -- (8.25,14.5);
-\draw [dashed] (8.25,14.5) -- (8.25,13.75);
-\draw [->, >=Stealth] (12.25,14.5) -- (13.25,14.5);
-\draw [->, >=Stealth] (8.25,9.75) -- (8.25,10.5);
-\node [font=\normalsize] at (11.5,12) {d};
-\node [font=\normalsize] at (7.5,10) {m};
-\node [font=\normalsize] at (12.75,15) {m};
-\node [font=\normalsize] at (12.75,14) {2};
-\node [font=\normalsize] at (8.5,10) {1};
-\node [font=\normalsize] at (11.5,14) {$45^\circ$};
-\node [font=\normalsize] at (8.75,11.25) {$45^\circ$};
-\draw (11.75,14.5) to[short] (12.25,14);
-\draw (8.25,11) to[short] (8.75,10.5);
-\end{circuitikz}
-}%
-\label{fig:my_label}
-\end{figure}
+\input{figs/fig3.tex}
 
 The energy of interaction is given by:
 \begin{multicols}{2}
@@ -283,60 +227,7 @@ The energy of interaction is given by:
 \end{multicols}
 
 \item Consider a conducting loop of radius $a$ and total loop resistance $R$ placed in a region with a magnetic field $B$, thereby enclosing a flux $\Phi_0$. The loop is connected to an electronic circuit as shown, the capacitor being initially uncharged.
-\begin{figure}[H]
-\centering
-\resizebox{0.4\textwidth}{!}{%
-\begin{circuitikz}
-\tikzstyle{every node}=[font=\normalsize]
-\draw  (7.75,13) circle (1cm);
-\draw (8.75,13.25) to[short] (12.5,13.25);
-\draw (8.75,13) to[short] (12.5,13);
-\draw (12.5,13.25) to[short] (12.5,13.75);
-\draw (12.5,13) to[short] (12.5,12.5);
-\draw [short] (16.25,13.25) -- (15,14.25);
-\draw [short] (16.25,13.25) -- (15,12);
-\draw [short] (15,14.25) -- (15,12);
-\draw (12.5,13.75) to[short] (15,13.75);
-\draw (12.5,12.5) to[short] (15,12.5);
-\node at (14.25,13.75) [circ] {};
-\draw (14.25,13.75) to[short] (14.25,15);
-\draw (14.25,15) to[C] (17,15);
-\node at (14.25,12.5) [circ] {};
-\draw (14.25,12.5) to (14.25,11.75) node[ground]{};
-\draw (16.25,13.25) to[short] (17.5,13.25);
-\draw (17,15) to[short] (17,13.25);
-\node at (17,13.25) [circ] {};
-\draw  (6,14.5) rectangle (9.5,11.25);
-\node [font=\LARGE] at (6.25,14.25) {$\times$};
-\node [font=\LARGE] at (7,14.25) {$\times$};
-\node [font=\LARGE] at (7.75,14.25) {$\times$};
-\node [font=\LARGE] at (8.5,14.25) {$\times$};
-\node [font=\LARGE] at (9.25,14.25) {$\times$};
-\node [font=\LARGE] at (6.25,13.5) {$\times$};
-\node [font=\LARGE] at (7.5,13.5) {$\times$};
-\node [font=\LARGE] at (8.5,13.5) {$\times$};
-\node [font=\LARGE] at (7,13.5) {$\times$};
-\node [font=\LARGE] at (9.25,13.5) {$\times$};
-\node [font=\LARGE] at (6.25,12.5) {$\times$};
-\node [font=\LARGE] at (7,12.5) {$\times$};
-\node [font=\LARGE] at (7.75,12.5) {$\times$};
-\node [font=\LARGE] at (8.5,12.5) {$\times$};
-\node [font=\LARGE] at (9.25,12.5) {$\times$};
-\node [font=\LARGE] at (6.25,11.75) {$\times$};
-\node [font=\LARGE] at (7,11.75) {$\times$};
-\node [font=\LARGE] at (7.75,11.75) {$\times$};
-\node [font=\LARGE] at (8.5,11.75) {$\times$};
-\node [font=\LARGE] at (9.25,11.75) {$\times$};
-\node [font=\LARGE] at (8.75,13.25) {\textbf{B}};
-\node [font=\normalsize] at (15.5,15.75) {C};
-\node [font=\normalsize] at (18,13.25) {$V_{out}$};
-\node [font=\normalsize] at (15.25,13.75) {$-$};
-\node [font=\normalsize] at (15.25,12.5) {$+$};
-\end{circuitikz}
-}%
-\label{fig:my_label}
-\end{figure}
-
+\input{figs/fig4.tex}
 
 If the loop is pulled out of the region of the magnetic field at a constant speed $v$, the final output voltage $V_{out}$ is independent of:
 \begin{multicols}{2}

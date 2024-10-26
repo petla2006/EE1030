@@ -1,0 +1,56 @@
+\begin{figure}[H]
+    \centering
+    \resizebox{0.4\textwidth}{!}{%
+    \begin{circuitikz}
+        \tikzstyle{every node}=[font=\normalsize]
+        \draw  (7.75,13) circle (1cm);
+        \draw (8.75,13.25) to[short] (12.5,13.25);
+        \draw (8.75,13) to[short] (12.5,13);
+        \draw (12.5,13.25) to[short] (12.5,13.75);
+        \draw (12.5,13) to[short] (12.5,12.5);
+        \draw [short] (16.25,13.25) -- (15,14.25);
+        \draw [short] (16.25,13.25) -- (15,12);
+        \draw [short] (15,14.25) -- (15,12);
+        \draw (12.5,13.75) to[short] (15,13.75);
+        \draw (12.5,12.5) to[short] (15,12.5);
+        \node at (14.25,13.75) [circ] {};
+        \draw (14.25,13.75) to[short] (14.25,15);
+        \draw (14.25,15) to[C] (17,15);
+        \node at (14.25,12.5) [circ] {};
+        \draw (14.25,12.5) to (14.25,11.75) node[ground]{};
+        \draw (16.25,13.25) to[short] (17.5,13.25);
+        \draw (17,15) to[short] (17,13.25);
+        \node at (17,13.25) [circ] {};
+        \draw  (6,14.5) rectangle (9.5,11.25);
+        \node [font=\LARGE] at (6.25,14.25) {$\times$};
+        \node [font=\LARGE] at (7,14.25) {$\times$};
+        \node [font=\LARGE] at (7.75,14.25) {$\times$};
+        \node [font=\LARGE] at (8.5,14.25) {$\times$};
+        \node [font=\LARGE] at (9.25,14.25) {$\times$};
+        \node [font=\LARGE] at (6.25,13.5) {$\times$};
+        \node [font=\LARGE] at (7.5,13.5) {$\times$};
+        \node [font=\LARGE] at (8.5,13.5) {$\times$};
+        \node [font=\LARGE] at (7,13.5) {$\times$};
+        \node [font=\LARGE] at (9.25,13.5) {$\times$};
+        \node [font=\LARGE] at (6.25,12.5) {$\times$};
+        \node [font=\LARGE] at (7,12.5) {$\times$};
+        \node [font=\LARGE] at (7.75,12.5) {$\times$};
+        \node [font=\LARGE] at (8.5,12.5) {$\times$};
+        \node [font=\LARGE] at (9.25,12.5) {$\times$};
+        \node [font=\LARGE] at (6.25,11.75) {$\times$};
+        \node [font=\LARGE] at (7,11.75) {$\times$};
+        \node [font=\LARGE] at (7.75,11.75) {$\times$};
+        \node [font=\LARGE] at (8.5,11.75) {$\times$};
+        \node [font=\LARGE] at (9.25,11.75) {$\times$};
+        \node [font=\LARGE] at (8.75,13.25) {\textbf{B}};
+        \node [font=\normalsize] at (15.5,15.75) {C};
+        \node [font=\normalsize] at (18,13.25) {$V_{out}$};
+        \node [font=\normalsize] at (15.25,13.75) {$-$};
+        \node [font=\normalsize] at (15.25,12.5) {$+$};
+    \end{circuitikz}
+    }%
+    
+    \label{fig:my_label}
+\end{figure}
+
+
