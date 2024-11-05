@@ -1,0 +1,16 @@
+plt.xlim(-1.5, 1.5)
+plt.ylim(-1.5, 1.5)
+plt.axhline(0, color='black', linewidth=0.5, ls='--')
+plt.axvline(0, color='black', linewidth=0.5, ls='--')
+plt.grid(color='gray', linestyle='--', linewidth=0.5)
+
+plt.title('Unit Vector in XY Plane')
+plt.xlabel('X-axis')
+plt.ylabel('Y-axis')
+
+# Adding a legend
+plt.legend(loc='upper right')
+
+# Save the plot as figure1.png
+plt.savefig('figure1.png')
+plt.show()
